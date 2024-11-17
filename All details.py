@@ -206,7 +206,7 @@ elif answer3==("3"):
 elif answer3==("4"):
     ram_an = ram[4][0]
     ram_an_p = ram[4][1]
-    price = price + ram[4][1]
+    price = price + ram[4][1]asd
 elif answer3==("5"):
     ram_an = ram[5][0]
     ram_an_p = ram[5][1]
