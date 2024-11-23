@@ -206,7 +206,7 @@ elif answer3==("3"):
 elif answer3==("4"):
     ram_an = ram[4][0]
     ram_an_p = ram[4][1]
-    price = price + ram[4][1]asd
+    price = price + ram[4][1]
 elif answer3==("5"):
     ram_an = ram[5][0]
     ram_an_p = ram[5][1]
@@ -474,3 +474,49 @@ if answer10==("10"):
     price = price + gpu[10][1]
 print(f'''{gpu_an} забезпечить велике FPS в багатьох іграх!
 -------------------------''')
+psu_an = 0
+psu_an_p = 0
+answer11 = input(f'''І на остаток, давай підберемо тобі блок живлення:
+1 - {psu[1][0]} ({psu[1][1]}$)
+2 - {psu[2][0]} ({psu[2][1]}$)
+3 - {psu[3][0]} ({psu[3][1]}$)
+4 - {psu[4][0]} ({psu[4][1]}$)
+5 - {psu[5][0]} ({psu[5][1]}$)
+''')
+if answer11==("1"):
+    psu_an = psu[1][0]
+    psu_an_p = psu[1][1]
+    price = price + psu[1][1]
+if answer11==("2"):
+    psu_an = psu[2][0]
+    psu_an_p = psu[2][1]
+    price = price + psu[2][1]
+if answer11==("3"):
+    psu_an = psu[3][0]
+    psu_an_p = psu[3][1]
+    price = price + psu[3][1]
+if answer11==("4"):
+    psu_an = psu[4][0]
+    psu_an_p = psu[4][1]
+    price = price + psu[4][1]
+if answer11==("5"):
+    psu_an = psu[5][0]
+    psu_an_p = psu[5][1]
+    price = price + psu[5][1]
+print(f'''Блок живлення {psu_an} забезпечить твій комп'ютер хорошим притоком енергії! Дуже хороший вибір!
+-------------------------''')
+print(f'''Ось загальна статистика всього, що ти вибрав:
+Процесор: {cpu_an} ({cpu_an_p}$)
+Кількість ядер: {core_an} ({core_an_p}$)
+SSD: {ssd_an} ({ssd_an_p}$)
+HDD: {hdd_an} ({hdd_an_p}$)
+Оперативна пам'ять: {ram_an} ({ram_an_p}$)
+Тип оперативної пам'яті: {ddr_an} ({ddr_an_p}$)
+Материнська плата: {mb_an} ({mb_an_p}$)
+Охолодження: {cooler_an} ({cooler_an_p}$)
+Відеокарта: {gpu_an} ({gpu_an_p}$)
+Блок живлення: {psu_an} ({psu_an_p}$)
+Корпус: {case_an} ({case_an_p}$)
+Загальна ціна: {price}$ ({price*41} UAH)
+У тебе вийшов комп'ютер за {price}$, він дуже сильний, красивий та зручний,
+сподіваюсь, я вам допоміг! Удачі!''')
